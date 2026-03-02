@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pishang! - Modern Banana Bar</title>
+    <style>
+        body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; margin: 0; background-color: #fffdf0; }
+        header { background-color: #ffcc00; padding: 20px; text-align: center; color: #333; }
+        .hero { text-align: center; padding: 50px 20px; background: #ffe066; }
+        .hero h1 { font-size: 3rem; margin: 0; color: #5c4033; }
+        
+        .container { max-width: 1000px; margin: auto; padding: 20px; }
+        .menu-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 20px; }
+        .card { background: white; border-radius: 15px; overflow: hidden; box-shadow: 0 4px 8px rgba(0,0,0,0.1); transition: 0.3s; }
+        .card:hover { transform: translateY(-5px); }
+        .card img { width: 100%; height: 200px; object-fit: cover; background: #ddd; }
+        .card-info { padding: 15px; text-align: center; }
+        .price { color: #e67e22; font-weight: bold; font-size: 1.2rem; }
+
+        .btn-order { 
+            display: inline-block; background: #25d366; color: white; 
+            padding: 15px 30px; text-decoration: none; border-radius: 50px; 
+            font-weight: bold; margin-top: 20px;
+        }
+        footer { text-align: center; padding: 30px; color: #777; font-size: 0.9rem; }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h2>🍌 Pishang!</h2>
+    </header>
+
+    <section class="hero">
+        <h1>Bukan Pisang Biasa.</h1>
+        <p>Olahan pisang kekinian dengan lumeran coklat dan tumpukan keju premium.</p>
+        <a href="#" class="btn-order">Pesan via WhatsApp</a>
+    </section>
+
+    <div class="container">
+        <h2 style="text-align: center; color: #5c4033;">Menu Andalan</h2>
+        <div class="menu-grid">
+            <div class="card">
+                <img src="https://images.unsplash.com/photo-1590301157890-4810ed352733?auto=format&fit=crop&w=500&q=60" alt="Pisang Coklat">
+                <div class="card-info">
+                    <h3>Piscok Lumer</h3>
+                    <p>Coklat Belgia yang meleleh di setiap gigitan.</p>
+                    <p class="price">Rp 15.000</p>
+                </div>
+            </div>
+            <div class="card">
+                <img src="https://images.unsplash.com/photo-1559181567-c3190ca9959b?auto=format&fit=crop&w=500&q=60" alt="Pisang Keju">
+                <div class="card-info">
+                    <h3>Pisang Keju Salju</h3>
+                    <p>Taburan keju cheddar melimpah setinggi gunung.</p>
+                    <p class="price">Rp 18.000</p>
+                </div>
+            </div>
+            <div class="card">
+                <img src="https://images.unsplash.com/photo-1621932953986-15fcf084da0f?auto=format&fit=crop&w=500&q=60" alt="Pisang Nugget">
+                <div class="card-info">
+                    <h3>Banana S'mores</h3>
+                    <p>Pisang bakar dengan marshmallow dan biskuit.</p>
+                    <p class="price">Rp 20.000</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2026 Pishang! - Tugas Kuliah Kewirausahaan</p>
+    </footer>
+
+</body>
+</html>
